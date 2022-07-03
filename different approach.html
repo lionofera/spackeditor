@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+  
+  <div>
+<input id="userNameInn" type="text" placeholder="Username">
+<button onclick="register()">Register </button>
+<p id="message"></p>
+</div>
+<script>
+  function register() {
+    
+    const username = document.getElementById("userNameInn").value;
+    document.getElementById("message").innerHTML = username +", process done successfully";
+  }
+</script>
+</body>
+
+</html>

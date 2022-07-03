@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form</title>
+  <style>
+    h1, h3 {
+      text-align: center;
+      background-color: palevioletred;
+    }
+    
+    .pName {
+      position:absolute;
+      left:20%;
+    }
+    
+    .sSubmit {
+      position: absolute;
+      
+      left: 20%;
+      
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Player Submission Form</h1>
+  <h3 id="header3">Add Team Player</h3>
+  
+
+
+<div class="pName">
+<input type="text" value="Enter player name">
+</div>
+
+
+<br>
+<br>
+
+<div class="sSubmit">
+<button onclick="sayHi()">Submit</button>
+<p id="prompt"></p>
+</div>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="pName">
+  <input type="placeholder" value="Enter age"
+</div>
+
+
+<br>
+<br>
+
+
+<div class="sSubmit">
+  <button onclick="responseHi()">Submit</button>
+  <p id="promp"></p>
+</div>
+
+
+<script>
+  document.getElementById("header3").innerHTML = "This changed by Javascript!"
+</script>
+
+<script>
+function responseHi() {
+  document.getElementById("promp").innerHTML = "Submitted!"
+}
+</script>
+
+
+<script>
+function sayHi () {
+  document.getElementById("prompt").innerHTML = "Submitted!"
+}
+</script>
+
+</body>
+
+</html>
